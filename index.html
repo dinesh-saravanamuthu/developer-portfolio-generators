@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Developer Portfolio Generator</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="bar"><div class="logo">PORTFOLIO<span>LAB</span></div><div class="bar-actions"><button id="themeBtn" class="ghost">Switch theme</button><button id="exportBtn">Print / Save PDF</button></div></header>
+<main class="shell"><aside class="editor"><div class="intro"><span class="tag">BUILD YOUR PRESENCE</span><h1>Your portfolio,<br>your story.</h1><p>Fill in your details and watch your personal website take shape.</p></div>
+<form id="form">
+<label>Your name<input id="name" value="Jordan Lee" maxlength="45"></label>
+<label>Professional title<input id="role" value="Frontend Developer" maxlength="70"></label>
+<label>Short introduction<textarea id="about" rows="4">I create thoughtful digital experiences through clean code, purposeful design and a curiosity for solving problems.</textarea></label>
+<label>Email<input id="email" type="email" value="jordan@example.com"></label>
+<label>Location<input id="location" value="Chennai, India"></label>
+<label>Skills <small>Separate with commas</small><input id="skills" value="HTML, CSS, JavaScript, UI Design, Git"></label>
+<label>Featured project<input id="project" value="TaskFlow — A simple productivity dashboard"></label>
+<label>Project description<textarea id="projectDesc" rows="3">A responsive task management concept designed to make everyday planning feel simple and focused.</textarea></label>
+<label>Website / GitHub URL<input id="link" value="https://github.com/"></label>
+</form><p class="editor-note">Your edits are previewed instantly. This demo runs entirely in your browser.</p></aside>
+<section class="preview-area"><div class="preview-label"><span>LIVE WEBSITE PREVIEW</span><span class="live"><i></i> LIVE</span></div>
+<article class="site" id="site"><nav><div class="mini-logo" id="navName">JL<span>.</span></div><div class="nav-links"><a href="#aboutSection">About</a><a href="#workSection">Work</a><a href="#contactSection">Contact</a></div></nav>
+<section class="hero"><div class="hero-copy"><span class="hello">HELLO, I'M</span><h2 id="pName">Jordan Lee<span>.</span></h2><h3 id="pRole">Frontend Developer</h3><p id="pAbout"></p><a class="cta" href="#contactSection">Let's connect <b>↗</b></a></div><div class="orb"><div class="orb-inner">CREATE<br><span>·</span><br>BUILD<br><span>·</span><br>GROW</div></div></section>
+<section class="about-block" id="aboutSection"><div class="section-kicker">01 / WHAT I DO</div><div><h3>Curious mind.<br>Meaningful work.</h3><div class="skills" id="pSkills"></div><p class="location" id="pLocation"></p></div></section>
+<section class="work-block" id="workSection"><div class="section-kicker">02 / SELECTED WORK</div><div class="project-card"><span class="project-no">PROJECT / 01</span><h3 id="pProject"></h3><p id="pProjectDesc"></p><a id="pLink" href="https://github.com/" target="_blank" rel="noopener">Explore project ↗</a></div></section>
+<section class="contact-block" id="contactSection"><div><div class="section-kicker">03 / SAY HELLO</div><h3>Have a good idea?<br>Let's make it real.</h3></div><a id="pEmail" href="mailto:jordan@example.com">jordan@example.com ↗</a></section>
+<footer>DESIGNED WITH INTENTION <span>© <span id="year"></span></span></footer></article></section></main>
+<script src="script.js"></script></body></html>
